@@ -12,16 +12,27 @@
 </head>
 
 <body class="bg-gray-800 h-dvh ">
-    <main class="container h-full w-full  flex ">
-        <section class="h-full w-full p-12">
+    <main class=" h-full w-full justify-center flex ">
+        <section class="container h-full w-full px-24 py-3 flex flex-col justify-between">
 
-            <input
-                class="shadow block appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="text" type="text" placeholder="Escrbir texto">
-            <button
-                class="block rounded-md bg-sky-500 p-2 text-white hover:bg-sky-300 transition-all ease-in duration-150"
-                id="sendButton">Enviar</button>
-            <div id="chatMessages"></div>
+            <section class="bg-black h-full gap flex flex-col p-10" id="chatMessages">
+                <div class="">
+
+                    <textarea name="question" id="response">question</textarea>
+                </div>
+                <div>
+
+                    <textarea name="response" id="response">response</textarea>
+                </div>
+            </section>
+            <div class="flex w-full gap-2 ">
+                <textarea
+                    class="shadow resize-none overflow-hidden block h-[46px] max-h-[25dvh] border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-sky-300 focus:shadow-outline"
+                    id="text-box" placeholder="Message Chat"></textarea>
+                <button
+                    class=" rounded-md bg-stone-700 p-2 text-white hover:bg-stone-800 transition-all ease-in duration-150"
+                    id="sendButton">Enviar</button>
+            </div>
 
         </section>
         <button></button>
